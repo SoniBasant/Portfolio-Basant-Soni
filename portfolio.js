@@ -1,6 +1,8 @@
 
 const controlBtn = document.querySelectorAll(".control");
 const activePage = document.querySelectorAll(".section");
+const toggle = document.querySelector(".theme-btn");
+
 
 controlBtn.forEach((btn) => {
     btn.addEventListener('click', (e) => {
@@ -24,3 +26,10 @@ controlBtn.forEach((btn) => {
         element.classList.add('active');
     });
 });
+
+
+// For theme change
+
+toggle.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+})
