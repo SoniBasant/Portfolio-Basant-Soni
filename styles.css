@@ -501,8 +501,11 @@ section {
   border-radius: 50%;
   transition: all .4s ease-in-out;
 }
-.social-items .fab:hover {
+.social-items span:hover .fab {
   color: var(--color-secondary);
+}
+.social-items span:hover p {
+  text-decoration: underline;
 }
 .social-items .hashnode .square {
   height: 1.95rem;
@@ -512,10 +515,10 @@ section {
   transform: rotate(45deg);
   transition: var(--transition-properties);
   margin: 5px;
-  -webkit-mask: radial-gradient(#0000 28%, #000 28%);
-  mask: radial-gradient(#0000 28%, #000 28%);
+  -webkit-mask: radial-gradient(rgba(0,0,0,0) 28%, #000 28%);
+  mask: radial-gradient(rgba(0,0,0,0) 28%, #000 28%);
 }
-.social-items .hashnode .square:hover {
+.social-items .hashnode:hover .square{
   background-color: var(--color-secondary);
 }
 /* .social-items .hashnode .square .circle {
