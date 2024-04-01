@@ -306,6 +306,7 @@ section {
 }
 .about-container .right-about {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: flex-start;
   line-height: 2rem;
@@ -320,6 +321,7 @@ section {
 }
 .about-container .right-about .icons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: space-evenly;
 }
@@ -337,7 +339,16 @@ section {
   color: var(--color-secondary);
   font-size: 2rem;
 }
+/* tailwind icon start */
+.about-container .right-about .icons .icon-tailwind svg {
+  height: 2rem;
+}
+.about-container .right-about .icons .icon-tailwind path {
+  fill: var(--color-secondary); 
+}
+/* tailwind icon end */
 .about-container .left-about {
+  flex: 1;
   margin-right: 2rem;
 }
 .about-container .left-about p {
@@ -370,7 +381,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 3.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
 }
 .projects-container .project {
   margin: 2rem;
@@ -387,7 +398,6 @@ section {
   cursor: default;
   transform: translateY(-5px);
   border: 1px solid var(--color-secondary);
-  /* box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32); */
   box-shadow: 1px 4px 15px var(--color-secondary-shadow);
 }
 .projects-container .project .masking {
@@ -406,10 +416,33 @@ section {
 .projects-container .project:hover .masking {
   transform: translateY(0);
 }
+.projects-container .project .masking .project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.projects-container .project .masking .project-links p a{
+  padding: 0 10px;
+  color: var(--color-secondary);
+}
+.projects-container .project .masking .project-links p a:hover {
+  text-decoration: underline;
+}
 .projects-container .project img {
   height: 9rem;
   width: 16rem;
 }
+/* more projects start*/
+.portfolio .more-projects p{
+  display: flex;
+  justify-content: right;
+  color: var(--color-secondary);
+  
+}
+.portfolio .more-projects p:hover {
+  text-decoration: underline;
+}
+/* more projects start*/
 /* Project end */
 
 /* Blogs start */
