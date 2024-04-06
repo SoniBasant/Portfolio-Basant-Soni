@@ -347,6 +347,26 @@ section {
   fill: var(--color-secondary); 
 }
 /* tailwind icon end */
+/* git icon start */
+.about-container .right-about .icons .icon-git svg {
+  height: 2rem;
+}
+.about-container .right-about .icons .icon-git path {
+  fill: var(--color-secondary);
+}
+/* git icon end */
+/* django icon start */
+.about-container .right-about .icons .icon-django svg {
+  height: 2rem;
+  fill: var(--color-secondary);
+}
+.about-container .right-about .icons .icon-django svg #bg{
+  fill: var(--color-secondary);
+}
+.about-container .right-about .icons .icon-django svg g path {
+  fill: var(--color-primary);
+}
+/* django icon end */
 .about-container .left-about {
   flex: 1;
   margin-right: 2rem;
