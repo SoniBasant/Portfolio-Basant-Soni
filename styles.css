@@ -493,7 +493,7 @@ section {
 .portfolio .more-projects p:hover {
   text-decoration: underline;
 }
-/* more projects start*/
+/* more projects end*/
 /* Project end */
 
 /* Blogs start */
@@ -517,7 +517,7 @@ section {
   grid-template-columns: auto auto; */
   justify-content: center;
   padding-top: 3.5rem;
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
 }
 .blogs-container .blog {
   margin: 2rem;
@@ -537,6 +537,17 @@ section {
   height: 9rem;
   width: 16rem;
 }
+/* more blogs start*/
+.blogs .more-blogs p{
+  display: flex;
+  justify-content: right;
+  color: var(--color-secondary);
+  
+}
+.blogs .more-blogs p:hover {
+  text-decoration: underline;
+}
+/* more blogs end*/
 /* blog end */
 
 /* Contact start */
@@ -716,7 +727,7 @@ section {
 }
 .frontendMentor p {
   position: relative;
-  top: -0.2rem;
+  top: -0.25rem;
 }
 .frontendMentor:hover {
   --color-grey-3: var(--color-secondary);
