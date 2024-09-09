@@ -337,7 +337,7 @@ section {
   font-size: 0.9rem;
 }
 .about-container .right-about .icons span .fab {
-  color: var(--color-secondary);
+  /* color: var(--color-secondary); */
   font-size: 2rem;
 }
 /* nextjs icon start */
